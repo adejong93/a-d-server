@@ -74,7 +74,7 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // set port, listen for requests
 // const PORT = process.env.NODE_DOCKER_PORT || process.env.PORT || 8080;
-const PORT = process.env.SERVER_PORT || 8080;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });
